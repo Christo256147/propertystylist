@@ -173,7 +173,7 @@ p + p {
 
 .section-pad {
   padding: var(--section-pad) 0;
-  scroll-margin-top: 120px;
+  scroll-margin-top: 160px;
 }
 
 
