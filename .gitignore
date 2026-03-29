@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# Editor
+.vscode/
+*.swp
+*.swo
+
+# Local dev
+*.log
+
+# Original/working source files not needed in repo
+DSC09605.jpg
+images/Chris_Burks_*.png
+images/Tracey\ Master_*.png

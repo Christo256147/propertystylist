@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tracey Masters is a Wellington-based property stylist with 18 years' experience helping vendors present their homes for real estate photography and open homes.">
+
+  <!-- Content Security Policy -->
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self';
+    style-src 'self' https://fonts.googleapis.com;
+    font-src https://fonts.gstatic.com;
+    img-src 'self' data:;
+    connect-src 'self' https://formspree.io;
+    form-action https://formspree.io;
+    frame-ancestors 'none';
+    base-uri 'self';
+    object-src 'none';
+  ">
+  <title>Tracey Masters — Property Stylist | Wellington</title>
+
+  <!-- Favicon (placeholder — replace with supplied asset) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230a0a0a'/><text y='.9em' font-size='80' font-family='serif' fill='%23b8975a'>T</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Hero image preload -->
+  <link rel="preload" as="image" href="images/hero.jpg">
+
+  <link rel="stylesheet" href="styles.css?v=9">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <header class="site-nav" id="site-nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Tracey Masters Property Stylist — home">
+        <img src="images/logo.png" alt="Tracey Masters Property Stylist" class="nav-logo-img">
+      </a>
+
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact" class="nav-cta">Enquire</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile navigation overlay -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation menu">&times;</button>
+    <nav aria-label="Mobile navigation">
+      <ul>
+        <li><a href="#services" class="mobile-nav-link">Services</a></li>
+        <li><a href="#process" class="mobile-nav-link">Process</a></li>
+        <li><a href="#testimonials" class="mobile-nav-link">Testimonials</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- ============================================================
+         SECTION 1 — HERO
+    ============================================================ -->
+    <section id="hero" class="hero">
+      <img
+        src="images/hero.jpg"
+        alt="Beautifully styled living room — an example of Tracey Masters' property styling work"
+        class="hero-image"
+      >
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">Wellington Property Styling</p>
+        <h1>Your home,<br>beautifully<br>presented.</h1>
+        <p class="hero-sub">
+          Professional styling for real estate photography<br>
+          and open homes — working with what you have.
+        </p>
+        <a href="#contact" class="btn-outline">Enquire Now &rarr;</a>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 2 — INTRO / STATS
+    ============================================================ -->
+    <section id="intro" class="intro section-pad">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="intro-text animate-fade">
+            <h2>There's a reason most homes<br>sell online first.</h2>
+            <p>
+              Buyers scroll through dozens of listings before they ever visit a property.
+              How your home reads in photographs determines whether they make the call.
+            </p>
+            <p>
+              Tracey Masters has spent 18 years helping Wellington vendors make that
+              first impression count.
+            </p>
+          </div>
+
+          <div class="intro-stats animate-fade">
+            <div class="stat-block">
+              <span class="stat-number">18</span>
+              <span class="stat-label">Years of experience</span>
+            </div>
+            <div class="stat-rule" aria-hidden="true"></div>
+            <div class="stat-block">
+              <span class="stat-number">3,000+</span>
+              <span class="stat-label">Homes styled</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 3 — SERVICES
+    ============================================================ -->
+    <section id="services" class="services section-pad">
+      <div class="container">
+        <div class="section-header animate-fade">
+          <p class="eyebrow">What I Offer</p>
+          <div class="ornamental-rule" aria-hidden="true"></div>
+          <h2>Services tailored to<br>where you are in the process</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card animate-fade">
+            <h3>Walk-Through Consultation</h3>
+            <p>
+              A comprehensive on-site visit — up to two hours — walking through your home
+              together and identifying exactly what needs to change before marketing begins.
+            </p>
+          </article>
+
+          <article class="service-card animate-fade">
+            <h3>Pre-Photography Prep &amp; Styling</h3>
+            <p>
+              Hands-on styling on or before shoot day to make sure every room reads
+              beautifully on camera. The details that matter most, handled.
+            </p>
+          </article>
+
+          <article class="service-card animate-fade">
+            <h3>Virtual Styling</h3>
+            <p>
+              Not in Wellington, or prefer to start remotely? A video call and email
+              follow-up covers the key principles and gives you a clear action plan.
+            </p>
+          </article>
+
+          <article class="service-card animate-fade">
+            <h3>New Home Set-Up</h3>
+            <p>
+              Moving into a new place? I'll help you arrange and style your furniture
+              and belongings so your new home feels considered and complete from day one.
+            </p>
+          </article>
+
+          <article class="service-card animate-fade">
+            <h3>Furniture &amp; Accessories Guidance</h3>
+            <p>
+              Specific recommendations for pieces that will elevate your space — always
+              with budget in mind. No unnecessary spending, just the right additions.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 4 — PROCESS
+    ============================================================ -->
+    <section id="process" class="process section-pad">
+      <div class="container">
+        <div class="section-header animate-fade">
+          <p class="eyebrow">How It Works</p>
+          <div class="ornamental-rule" aria-hidden="true"></div>
+          <h2>A simple, considered<br>process from start to finish</h2>
+        </div>
+
+        <div class="process-steps">
+          <div class="process-step animate-fade">
+            <span class="step-number">01</span>
+            <h3>Discovery Call</h3>
+            <p>
+              We start with a phone conversation to understand your home, your timeline,
+              and what you're hoping to achieve. From there, we agree on a time that
+              works for you.
+            </p>
+          </div>
+
+          <div class="process-connector" aria-hidden="true"></div>
+
+          <div class="process-step animate-fade">
+            <span class="step-number">02</span>
+            <h3>On-Site Consultation</h3>
+            <p>
+              I spend up to two hours walking through your home with you — room by room
+              — identifying what to move, edit, or add. You'll leave with a clear picture
+              of what needs to happen.
+            </p>
+          </div>
+
+          <div class="process-connector" aria-hidden="true"></div>
+
+          <div class="process-step animate-fade">
+            <span class="step-number">03</span>
+            <h3>Tailored Follow-Up</h3>
+            <p>
+              After the consultation, I send through visual references, example photos,
+              and any specific recommendations — paint colours, styling notes, or pieces
+              worth sourcing — so you have everything in one place.
+            </p>
+          </div>
+
+          <div class="process-connector" aria-hidden="true"></div>
+
+          <div class="process-step animate-fade">
+            <span class="step-number">04</span>
+            <h3>Photography Day <span class="step-optional">Optional Add-On</span></h3>
+            <p>
+              As an add-on, I'm available to come back on the morning of your shoot for
+              a final styling pass before the photographer arrives.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 5 — TESTIMONIALS
+    ============================================================ -->
+    <section id="testimonials" class="testimonials section-pad">
+      <div class="container">
+        <div class="section-header animate-fade">
+          <p class="eyebrow">What Clients Say</p>
+          <div class="ornamental-rule" aria-hidden="true"></div>
+        </div>
+
+        <div class="testimonials-carousel" role="region" aria-label="Client testimonials">
+          <div class="testimonials-track" id="testimonials-track">
+
+            <blockquote class="testimonial animate-fade">
+              <div class="quote-mark" aria-hidden="true">&ldquo;</div>
+              <p>
+                Tracey completely transformed how I saw my own home. I'd lived there for
+                12 years and stopped noticing things. She walked in and within minutes had
+                a clear vision — and the photos were incredible.
+              </p>
+              <cite>— Sarah M., Karori</cite>
+            </blockquote>
+
+            <blockquote class="testimonial animate-fade">
+              <div class="quote-mark" aria-hidden="true">&ldquo;</div>
+              <p>
+                Our agent recommended Tracey and I'm so glad she did. The consultation
+                was relaxed and practical, not overwhelming. The house sold in four days
+                — I genuinely think the presentation made the difference.
+              </p>
+              <cite>— James &amp; Anna T., Thorndon</cite>
+            </blockquote>
+
+            <blockquote class="testimonial animate-fade">
+              <div class="quote-mark" aria-hidden="true">&ldquo;</div>
+              <p>
+                Working with Tracey is the best investment you can make before listing.
+                She understands what the camera sees, and she makes the whole process
+                feel effortless.
+              </p>
+              <cite>— Mark R., Property Consultant — Harcourts Wellington</cite>
+            </blockquote>
+
+          </div>
+
+          <div class="testimonials-nav" aria-label="Testimonial navigation">
+            <button class="testimonial-btn" id="prev-testimonial" aria-label="Previous testimonial">&larr;</button>
+            <div class="testimonial-dots" id="testimonial-dots" role="tablist" aria-label="Testimonial indicators">
+              <button class="dot active" role="tab" aria-selected="true" aria-label="Testimonial 1"></button>
+              <button class="dot" role="tab" aria-selected="false" aria-label="Testimonial 2"></button>
+              <button class="dot" role="tab" aria-selected="false" aria-label="Testimonial 3"></button>
+            </div>
+            <button class="testimonial-btn" id="next-testimonial" aria-label="Next testimonial">&rarr;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 6 — ABOUT
+    ============================================================ -->
+    <section id="about" class="about section-pad">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-wrap animate-fade">
+            <img
+              src="images/portrait.jpg"
+              alt="Tracey Masters, Wellington property stylist"
+              class="portrait-image"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="about-text animate-fade">
+            <p class="eyebrow">About</p>
+            <div class="ornamental-rule" aria-hidden="true"></div>
+            <h2>Hi, I'm Tracey.</h2>
+
+            <p>
+              I'm a property stylist who works directly with vendors to get their home
+              looking its absolute best for marketing photos and beyond.
+            </p>
+            <p>
+              What I do is a little different from traditional home staging. Rather than
+              bringing in furniture and accessories, I work with what you already have —
+              making the most of your existing pieces and only suggesting additional items
+              where they'd genuinely elevate the overall look. I'm also mindful of budgets,
+              so nothing I recommend will break the bank.
+            </p>
+            <p>
+              Because most buyers encounter a property online before they ever step through
+              the door, first impressions really do matter. My focus is on how your home
+              will read in photographs — once it looks great there, it naturally carries
+              through to your open homes too.
+            </p>
+            <p>
+              After I've styled your kitchen and/or bedroom, I'll follow up with example
+              photos so you can see exactly how those spaces will come across on camera.
+              It's a handy reference for keeping things photo-ready on the day.
+            </p>
+            <p>
+              A beautifully presented home not only photographs better — it genuinely
+              supports the agents in achieving the best possible result for your sale.
+              As an optional add-on, I'm also happy to come back on the morning of the
+              shoot to do a final styling pass before the photographer arrives.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 7 — CONTACT
+    ============================================================ -->
+    <section id="contact" class="contact section-pad">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-intro animate-fade">
+            <h2>Let's talk about<br>your property.</h2>
+            <p>
+              Whether you're preparing to list, just moving in, or not sure where to
+              start — get in touch and we'll find the right approach for you.
+            </p>
+            <p>
+              Most enquiries come via referral from real estate agents, but all
+              vendors are welcome.
+            </p>
+            <div class="contact-details">
+              <a href="mailto:tracey@propertystylist.co.nz" class="contact-link">
+                tracey@propertystylist.co.nz
+              </a>
+              <a href="tel:0277276980" class="contact-link">
+                027 727 6980
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap animate-fade">
+            <form
+              id="contact-form"
+              action="https://formspree.io/f/xbdpgdpj"
+              method="POST"
+              novalidate
+            >
+              <div class="form-group">
+                <label for="name">Full Name <span aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  autocomplete="name"
+                  aria-required="true"
+                  placeholder="Your full name"
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  autocomplete="email"
+                  aria-required="true"
+                  placeholder="your@email.com"
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  autocomplete="tel"
+                  placeholder="+64 xx xxx xxxx"
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="address">Property Address</label>
+                <input
+                  type="text"
+                  id="address"
+                  name="address"
+                  autocomplete="street-address"
+                  placeholder="Street address, suburb"
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="message">Tell me about your property <span aria-hidden="true">*</span></label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  aria-required="true"
+                  rows="5"
+                  placeholder="What stage are you at? What are you hoping to achieve?"
+                ></textarea>
+              </div>
+
+              <!-- Honeypot — hidden from real users, bots fill it in -->
+              <div class="form-honeypot" aria-hidden="true">
+                <label for="website">Website</label>
+                <input
+                  type="text"
+                  id="website"
+                  name="website"
+                  tabindex="-1"
+                  autocomplete="off"
+                >
+              </div>
+
+              <div id="form-status" class="form-status" aria-live="polite" role="status"></div>
+
+              <button type="submit" class="btn-outline btn-submit">
+                Send Enquiry
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="Tracey Masters Property Stylist" class="footer-logo-img">
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#services">Services</a>
+          <span aria-hidden="true">|</span>
+          <a href="#process">Process</a>
+          <span aria-hidden="true">|</span>
+          <a href="#about">About</a>
+          <span aria-hidden="true">|</span>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="footer-contact">
+          <a href="mailto:tracey@propertystylist.co.nz">tracey@propertystylist.co.nz</a>
+          <a href="tel:0277276980">027 727 6980</a>
+        </div>
+      </div>
+
+      <div class="footer-bar">
+        <p>&copy; 2026 Tracey Masters Property Stylist. All rights reserved. Wellington, New Zealand.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
