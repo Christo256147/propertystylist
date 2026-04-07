@@ -106,7 +106,7 @@
 
   function goTo(index) {
     current = (index + total) % total;
-    track.style.transform = 'translateX(-' + (current * 100) + '%)';
+    track.style.transform = 'translateX(-' + (current * 100 / total) + '%)';
 
     dots.forEach(function (dot, i) {
       dot.classList.toggle('active', i === current);
