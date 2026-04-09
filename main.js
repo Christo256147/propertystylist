@@ -141,14 +141,14 @@
     // Auto-advance every 6 seconds
     let autoplay = setInterval(function () {
       goTo(current + 1);
-    }, 6000);
+    }, 10000);
 
     // Pause on interaction
     function resetAutoplay() {
       clearInterval(autoplay);
       autoplay = setInterval(function () {
         goTo(current + 1);
-      }, 6000);
+      }, 10000);
     }
 
     prevBtn.addEventListener('click', resetAutoplay);
