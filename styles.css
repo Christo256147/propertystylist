@@ -1266,3 +1266,24 @@ p + p {
   .service-card:nth-child(4) { grid-column: 2 / 4; }
   .service-card:nth-child(5) { grid-column: 4 / 6; }
 }
+
+
+/* ============================================================
+   SHORT VIEWPORTS — prevent logo overlapping hero text
+   Targets landscape tablets/iPads where the tall logo pushes
+   down into the hero content area.
+============================================================ */
+@media (min-width: 1024px) and (max-height: 899px) {
+  .nav-logo-img {
+    height: 120px;
+  }
+  .section-pad {
+    scroll-margin-top: 160px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) and (max-height: 500px) {
+  .nav-logo-img {
+    height: 72px;
+  }
+}
